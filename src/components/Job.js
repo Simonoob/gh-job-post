@@ -6,7 +6,7 @@ export default function Job({ job }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card className="mb-4">
+    <Card className="mb-5">
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
@@ -37,11 +37,11 @@ export default function Job({ job }) {
             onClick={() => setOpen((prevOpen) => !prevOpen)}
             variant="primary"
           >
-            {open ? "More" : "Collapse"}
+            {!open ? "More" : "Collapse"}
           </Button>
         </Card.Text>
         <Collapse in={open}>
-          <div className="mt4">
+          <div className="mt-4">
             <ReactMarkdown source={job.description} />
           </div>
         </Collapse>
