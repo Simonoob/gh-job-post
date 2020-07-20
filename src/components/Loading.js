@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div className="loading">
       <div className="preloader-wrapper big active">
-        <div className="spinner-layer">
+        <div className="spinner-layer spinner-black-only">
           <div className="circle-clipper left">
             <div className="circle"></div>
           </div>

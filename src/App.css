@@ -1,6 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60vh;
+}
+
+.card {
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 2rem 0;
+  min-height: fit-content;
+  max-height: 100vh;
+}
+
+.card-title {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bolder;
+}
+
+.date {
+  font-size: medium;
+  margin-bottom: 3rem;
+}
+
+.card-content {
+  padding: 20rem;
 }
