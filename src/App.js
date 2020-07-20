@@ -28,11 +28,16 @@ function App() {
   return (
     <div className="App">
       <Container className="container my-5">
-        <h1 className="mb-5">GitHub Jobs</h1>
+        <h1 className="mb-3">GitHub Job Finder</h1>
+        <h3 className="mb-5 text-muted font-weight-light">
+          Discover the latest entries from GitHub-Jobs
+        </h3>
         <SearchForm params={params} onParamChange={applyParamChange} />
         <JobPages page={page} setPage={setPage} hasNextPage={hasNextPage} />
         {loading && <Loading />}
-        {error && <h4 className="error">There was an error. Try Refreshing</h4>}
+        {error && (
+          <h4 className="error">There was an error. Try Refreshing.</h4>
+        )}
         {!loading &&
           !error &&
           jobs.map((job) => {
