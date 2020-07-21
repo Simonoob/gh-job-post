@@ -5,7 +5,17 @@ export default function SeachForm({ params, onParamChange }) {
   return (
     <Form className="mb-5">
       <Form.Row className="align-items-end">
-        <Form.Group as={Col}>
+        <Form.Group as={Col} xs="auto">
+          <Form.Label>Title</Form.Label>
+          <Form.Control
+            onChange={onParamChange}
+            value={params.title}
+            name="title"
+            type="text"
+          />
+        </Form.Group>
+
+        <Form.Group as={Col} xs="auto">
           <Form.Label>Description</Form.Label>
           <Form.Control
             onChange={onParamChange}
@@ -15,7 +25,7 @@ export default function SeachForm({ params, onParamChange }) {
           />
         </Form.Group>
 
-        <Form.Group as={Col}>
+        <Form.Group as={Col} xs="auto">
           <Form.Label>Location</Form.Label>
           <Form.Control
             onChange={onParamChange}
