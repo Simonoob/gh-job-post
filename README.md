@@ -1,4 +1,6 @@
 React app using GitHub Jobs api to fetch and filter jobs in real time based on search queries.
 
-Technologies nad techniques used:
-React (with hooks), Bootstrap, async/await syntax and Axios
+<a href="https://eloquent-goldstine-61bd2a.netlify.app/">Check it live</a>
+
+Technologies and techniques used:
+React (with hooks), Bootstrap and Axios.
